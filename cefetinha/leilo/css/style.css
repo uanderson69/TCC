@@ -1,0 +1,94 @@
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.jumbotron {
+  background-color: #96c5b0;
+  padding: 3rem;
+  margin-bottom: 100;
+  text-align: center;
+  margin: 1px 1px 100px;
+}
+
+.auction-item {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.auction-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.auction-item img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+}
+
+.auction-item h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.auction-item p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.btn-bid {
+  background-color: #50dddd;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-bid:hover {
+  background-color: #50dddd;
+}
+
+.timer {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.image-row {
+display: flex;
+justify-content: space-between;
+}
+
+.image-row img {
+width: calc(33.33% - 10px);
+margin-bottom: 1rem;
+}
+.display-4 {
+font-family: MoonTime, Arial, Helvetica, sans-serif ;
+}
+
+@media (max-width: 768px) {
+.image-row {
+  flex-wrap: wrap;
+}
+
+.image-row img {
+  width: 100%;
+}
+.container{
+  margin: 10px 15px 20px;
+}
+}
+.options {
+display: none;
+}

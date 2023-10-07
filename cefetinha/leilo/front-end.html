@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tela de Login</title>
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Estilos CSS para a página */
+		body {
+			background-color: #96c5b0;
+			font-family: Arial, sans-serif;
+		}
+		form {
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px #ccc;
+			padding: 20px;
+			width: 300px;
+			margin: 0 auto;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		input[type="text"], input[type="password"] {
+			padding: 10px;
+			width: 100%;
+			border-radius: 3px;
+			border: 1px solid #ccc;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+       input {
+            background-image: url("caminho/para/imagem-de-textura.png"); /* imagem de textura */
+            background-repeat: repeat-x; /* repetir a imagem horizontalmente */
+            background-size: auto 50%; /* definir o tamanho da imagem */
+    }
+	</style>
+</head>
+<body>
+	<form>
+		<h2>Tela de Login</h2>
+		<label for="username">Usuário:</label>
+		<input type="text" id="username" name="username">
+		<label for="password">Senha:</label>
+		<input type="password" id="password" name="password">
+		<input type="submit" value="Entrar">
+	</form>
+</body>
+</html>
