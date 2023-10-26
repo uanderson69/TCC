@@ -17,7 +17,7 @@ if (isset($_POST["email"]) && isset($_POST["senha"])) {
             $_SESSION['id'] = $dados['idUsuario'];
             $_SESSION['perfil'] = $dados['Perfil'];
             $_SESSION['logado'] = true;
-            header("Location: telainicial.php");
+            header("Location: index.php");
         } else {
             header("Location: lancesdados.php"); // Corrigido o redirecionamento para login.html
         }

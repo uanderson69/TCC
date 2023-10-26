@@ -11,4 +11,6 @@ $database = 'livia';
 
 $con = mysqli_connect($hostname, $user, $password ,$database) or die ($con -> connect_errno);
 
+$con_aux = mysqli_connect($hostname, $user, $password ,$database) or die ($con_aux -> connect_errno);
+
 ?>

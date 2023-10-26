@@ -8,6 +8,7 @@
 </head>
 
 <body>
+  
   <!-- Criando a barra de navegação -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <table>
@@ -22,7 +23,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="telainicial.html" title="Ir para a página inicial">Home</a>
+          <a class="nav-link" href="index.php" title="Ir para a página inicial">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="sobre_nos.html" title="Ir para a página de sobre nós">Sobre nós</a>
@@ -66,13 +67,18 @@
           echo "<div class='col-md-4'>";
           echo "<div class='auction-item'>";
           echo "<h3>" . $dado['NomeProduto'] . "</h3>";
-          echo "<img src='".$dado['link']."'>";
-          echo  "<a class='btn btn-outline-info btn-sm' target='_blank' href='".$dado['Link']."' >Foto do Produto</a>";
-          echo "<p>Valor Incial: " . $dado['Valor'] . "</p>";
+          echo "<img src='uploads/" . $dado['Link'] . "' alt='".$dado['Link'] ."'>"; // Exibe a imagem
+          echo "<p>Valor Inicial: " . $dado['Valor'] . "</p>";
+          //mysqli_query($con, "select max(ValorLance) from lance where idDesapego = ".$dado['idDesapego']) ;
+          $VLance = mysqli_query($con, "select max(ValorLance) as LanceMaximo from lance where idDesapego = ".$dado['idDesapego']);
+          while ($row = $VLance->fetch_assoc()) {
+            echo "<p>Valor Atual: ".$row['LanceMaximo']."</p>";
+          }
           echo "<p class='time-left'>Tempo restante: <span class='countdown' data-duration='60'></span></p>";
           echo "<button class='btn btn-bid' onclick='redirectToOptions()'>Dar lance</button>";
           echo "</div>";
           echo "</div>";
+
         }
       }
       ?>

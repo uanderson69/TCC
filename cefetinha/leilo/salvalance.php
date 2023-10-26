@@ -11,7 +11,7 @@
     $sql = "INSERT INTO lance (idlance, valorlance) VALUES ('$idLance', '$ValorLance')";
 
     if(mysqli_query($con, $sql)){ //Aqui o mysqli_query está fazendo uma inserção no banco de dados
-        echo "<script>alert('Lance dado com sucesso!');window.location='telainicial.php'</script>";	//Caso a inserção seja feita com sucesso, a página será redirecionada ao 1tela.html
+        echo "<script>alert('Lance dado com sucesso!');window.location='index.php'</script>";	//Caso a inserção seja feita com sucesso, a página será redirecionada ao index.php
         mysqli_close($con); 	//Fechando a conexão, é muito importante que ela seja fechada!!!!
     }
     else{

@@ -24,7 +24,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="telainicial.php" title="Ir para a página inicial">Home</a>
+          <a class="nav-link" href="index.php" title="Ir para a página inicial">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="sobre_nos.html" title="Ir para a página de sobre nós">Sobre nós</a>
@@ -68,20 +68,19 @@
       <form method='post' action='salvadesapego.php' enctype="multipart/form-data">
         <div class="form-group">
           <label for="nomeproduto">Nome do Produto</label>
-          <input type="text" class="form-control" id="nomeproduto" name="nomeproduto" placeholder="Digite o nome do produto"
-            required>
+          <input type="text" class="form-control" id="nomeproduto" name="nomeproduto" placeholder="Digite o nome do produto" required>
         </div>
         <div class="form-group">
           <label for="valor">Valor Inicial do Leilão</label>
-          <input type="number" class="form-control" id="valor" name="valor" placeholder="Digite o valor inicial do leilão"
-            required>
+          <input type="number" class="form-control" id="valor" name="valor" placeholder="Digite o valor inicial do leilão" required>
         </div>
         <div class="form-group">
-          <label for="foto">Link da Imagem do Produto</label>
-          <input type="text" class="form-control-file" id="link" name="link" required>
+          <label for="foto">Upload da Imagem do Produto</label>
+          <input type="file" class="form-control-file" id="imagem" name="imagem" required>
         </div>
         <button type="submit" class="btn btn-primary">Cadastrar Produto</button>
       </form>
+      
     </div>
   
     
