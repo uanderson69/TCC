@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/font.css">
+</head>
+
+<body>
+  <!-- Criando a barra de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <table>
+      <tr>
+        <td><img src="imagens/logo.jpeg" alt="" width="70" height="70" class="d-inline-block align-text-top"></td>
+        <td><a class="navbar-brand" href="#">LeiloDiv</a></td>
+      </tr>
+    </table>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.php" title="Ir para a página inicial">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre_nos.html" title="Ir para a página de sobre nós">Sobre nós</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html" title="Ir para a página de contatos">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html" title="Ir para a página de login">Login</a>
+        </li>
+        <li class="nav-item" id="desapegarNavItem">
+          <a class="nav-link" href="desapegar.html" title="Ir para a página de desapego">Desapegar</a>
+        </li>
+      </ul>
+      <div class="navbar-nav ml-auto justify-content-end">
+        <a class="nav-link" href="login.html">
+          <button class="btn btn-outline-dark btn-rounded ml-3" title="Ir para login">Login</button>
+        </a>
+        <a class="nav-link" href="cadastrar.html">
+          <button class="btn btn-outline-dark btn-rounded" title="Ir para cadastro">Cadastro</button>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!DOCTYPE html>
+  <html>
+  
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/font.css">
+  </head>
+  
+  <body>
+    <!-- Resto do seu código... -->
+  
+    <div class="container mt-4">
+      <h1>Desapegar</h1>
+      <form method='post' action='salvadesapego.php' enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="nomeproduto">Nome do Produto</label>
+          <input type="text" class="form-control" id="nomeproduto" name="nomeproduto" placeholder="Digite o nome do produto" required>
+        </div>
+        <div class="form-group">
+          <label for="valor">Valor Inicial do Leilão</label>
+          <input type="number" class="form-control" id="valor" name="valor" placeholder="Digite o valor inicial do leilão" required>
+        </div>
+        <div class="form-group">
+          <label for="foto">Upload da Imagem do Produto</label>
+          <input type="file" class="form-control-file" id="imagem" name="imagem" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar Produto</button>
+      </form>
+      
+    </div>
+  
+    
+  </body>
+  
+  </html>
+  

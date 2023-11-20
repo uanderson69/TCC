@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href= "fonts/font.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-K1Q5qUUZsZ0DcS5VHJgfi8kL2IozZB8T+86hCnO09P8C4po21Ho6o+z5y7zme5VqfranTBNJNR8r2JMdENRcA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+    
+    .navbar-brand {
+      font-weight: bold;
+    }
+    
+    .jumbotron {
+      background-color: #96c5b0;
+      padding: 3rem;
+      margin-bottom: 0;
+    }
+    
+    .about-section {
+      padding: 3rem 0;
+      background-color: #fff;
+    }
+    
+    .about-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    
+    .about-section p {
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+    
+    .team-section {
+      padding: 3rem 0;
+      background-color: #f8f9fa;
+    }
+    
+    .team-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    
+    .team-member {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    
+    .team-member h4 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .team-member p {
+      font-size: 1rem;
+      color: #777;
+    }
+    
+    .footer {
+      background-color: #96c5b0;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+
+    /* Responsividade */
+    @media (max-width: 576px) {
+      .about-section h2,
+      .team-section h2 {
+        font-size: 2rem;
+      }
+    }
+
+    /* Ícones */
+    .icon {
+      font-size: 2rem;
+      color: #96c5b0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Criando a barra de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <table>
+      <tr>
+        <td><img src="imagens/logo.jpeg" alt="" width="70" height="70" class="d-inline-block align-text-top"></td>
+        <td><a class="navbar-brand" href="#">LeiloDiv</a></td>
+      </tr>
+    </table>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.php" title="Ir para a página inicial">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre_nos.html" title="Ir para a página de sobre nós" >Sobre nós</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html" title="Ir para a página de contatos">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html" title="Ir para a página de login">Login</a>
+        </li>
+      </ul>
+      <div class="navbar-nav ml-auto justify-content-end">
+        <a class="nav-link" href="login.html">
+          <button class="btn btn-outline-dark btn-rounded ml-3" title="Ir para login">Login</button>
+        </a>
+        <a class="nav-link" href="cadastrar.html">
+          <button class="btn btn-outline-dark btn-rounded" title="Ir para cadastro">Cadastro</button>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- Conteúdo principal -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">Sobre Nós</h1>
+      <p class="lead">Conheça a nossa história e equipe.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Seção "Sobre" -->
+    <div class="about-section">
+      <div class="container">
+        <p> Bem-vindo ao nosso site de leilões! 
+          Nós somos um grupo de três alunos do CEFET-MG Campus Divinópolis que criou este site como parte do nosso
+          trabalho de conclusão do curso do ensino médio</p>
+
+        <p> Nós nos inspiramos em sites de leilão famosos como o eBay e o Mercado Livre
+          para criar uma plataforma que permita que os usuários
+          comprem e vendam uma ampla variedade de produtos.
+          Nosso objetivo é fornecer uma plataforma segura e confiável para pessoas de todo o Brasil
+          para participar de leilões online</p>
+
+        <p>Nosso site oferece uma interface intuitiva e fácil de usar, que permite aos usuários navegar pelos
+          leilões, fazer lances e monitorar seus itens em tempo real.
+          Nós garantimos a segurança dos usuários e suas informações pessoais, bem
+          como a autenticidade dos produtos colocados à venda.</p>
+
+        <p>Nosso objetivo é proporcionar aos nossos usuários a melhor experiência possível
+          em leilões online. Queremos que eles se sintam seguros e confiantes ao usar nossa
+          plataforma e tenham uma experiência agradável em cada leilão.</p>
+
+        <p>Agradecemos por nos visitar e esperamos que você encontre o que procura em nosso site.</p>
+
+      </div>
+    </div>
+
+    <!-- Seção "Equipe" -->
+    <div class="team-section">
+      <div class="container">
+        <h2>Conheça Nossa Equipe</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="team-member">
+              <img src="imagens/livia.jpeg" alt="Membro 1">
+              <h4>Lívia Sales</h4>
+              <p>Programadora e redatora</p>
+              <div class="icon"><i class="fab fa-facebook"></i></div>
+              <div class="icon"><i class="fab fa-instagram"></i></div>
+              <div class="icon"><i class="fab fa-linkedin"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member">
+              <img src="imagens/uanderson.jpeg" alt="Membro 2">
+              <h4>Uanderson Teixeira</h4>
+              <p>Programador e redator</p>
+              <div class="icon"><i class="fab fa-facebook"></i></div>
+              <div class="icon"><i class="fab fa-instagram"></i></div>
+              <div class="icon"><i class="fab fa-linkedin"></i></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member">
+              <img src="imagens/naju.jpeg" alt="Membro 3">
+              <h4>Ana Júlia</h4>
+              <p>Redatora</p>
+              <div class="icon"><i class="fab fa-facebook"></i></div>
+              <div class="icon"><i class="fab fa-instagram"></i></div>
+              <div class="icon"><i class="fab fa-linkedin"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="footer" style="background-color: #96c5b0;">
+    <div class="container text-center">
+      <p style="color: #fff;">Todos os direitos reservados &copy; 2023 LeiloDiv</p>
+    </div>
+  </footer>
+
+  <!-- Adicionando o JavaScript do Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

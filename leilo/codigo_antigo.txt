@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+  body{
+    background-color: #96c5b0;
+  }
+</style>
+<body>
+	<!-- Criando a barra de navegação -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <table>
+      <tr>
+        <td><img src="imagens/logo.jpeg" alt="" width="70" height="70" class="d-inline-block align-text-top"></td>
+        <td><a class="navbar-brand" href="#">LeiloDiv</a></td>
+      </tr>
+    </table>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="telainicial.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="sobre_nos.html">Sobre nós</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="login.html">Login</a>
+				</li>
+        <li class="nav-item">
+					<a class="nav-link" href="contato.html">Contato</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+    <!-- Adicionando o JavaScript do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+  
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    
+    .navbar-brand {
+      font-weight: bold;
+    }
+    
+    .jumbotron {
+      background-color: #343a40;
+      padding: 3rem;
+      margin-bottom: 0;
+      color: #fff;
+    }
+    
+    .auction-item {
+      border: 1px solid #f8f9fa;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(184, 22, 22, 0.1);
+    }
+    
+    .auction-item img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+    }
+    
+    .auction-item h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+    
+    .auction-item p {
+      margin-bottom: 0;
+      color: #777;
+    }
+    
+    .btn-bid {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Criando a barra de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <table>
+      <tr>
+        <td><img src="imagens/logo.jpeg" alt="" width="70" height="70" class="d-inline-block align-text-top"></td>
+        <td><a class="navbar-brand" href="#">LeiloDiv</a></td>
+      </tr>
+    </table>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="telainicial.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre_nos.html">Sobre nós</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Bem-vindo ao LeiloDiv</h1>
+    <p class="lead">O melhor lugar para encontrar e dar lances em leilões incríveis!</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Saiba mais</a>
+  </div>
+
+  <div class="container">
+    <!-- Item de leilão 1 -->
+    <div class="auction-item">
+      <img src="imagens/relogio.png" alt="Item 1">
+      <h3>Relógio de pulso vintage</h3>
+      <p>Descrição do item: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat ligula ut elit pretium efficitur.</p>
+      <p>Lance atual: R$ 100,00</p>
+      <button class="btn btn-bid">Dar lance</button>
+    </div>
+
+    <!-- Item de leilão 2 -->
+    <div class="auction-item">
+      <img src="imagens/violao.png" alt="Item 2">
+      <h3>Violão clássico autografado</h3>
+      <p>Descrição do item: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat ligula ut elit pretium efficitur.</p>
+      <p>Lance atual: R$ 200,00</p>
+      <button class="btn btn-bid">Dar lance</button>
+    </div>
+
+    <!-- Item de leilão 3 -->
+    <div class="auction-item">
+      <img src="imagens/mona.png" alt="Item 3">
+      <h3>Quadro de arte moderna</h3>
+      <p>Descrição do item: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat ligula ut elit pretium efficitur.</p>
+      <p>Lance atual: R$ 300,00</p>
+      <button class="btn btn-bid">Dar lance</button>
+    </div>
+  </div>
+
+  <!-- Adicionando o JavaScript do Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+HISTORIA
+<p> Bem-vindo ao nosso site de leilões! 
+             Nós somos um grupo de três alunos do CEFET-MG Campus Divinópolis que criou este site como parte do nosso
+             trabalho de conclusão do curso do ensino médio</p>
+
+             <p> Nós nos inspiramos em sites de leilão famosos como o eBay e o Mercado Livre
+             para criar uma plataforma que permita que os usuários
+             comprem e vendam uma ampla variedade de produtos.
+             Nosso objetivo é fornecer uma plataforma segura e confiável para pessoas de todo o Brasil
+             para participar de leilões online</p><br>
+
+             <p>Nosso site oferece uma interface intuitiva e fácil de usar, que permite aos usuários navegar pelos
+             leilões, fazer lances e monitorar seus itens em tempo real.
+             Nós garantimos a segurança dos usuários e suas informações pessoais, bem
+             como a autenticidade dos produtos colocados à venda.
+             </p><br>
+
+             <p>Nosso objetivo é proporcionar aos nossos usuários a melhor experiência possível
+             em leilões online. Queremos que eles se sintam seguros e confiantes ao usar nossa
+             plataforma e tenham uma experiência agradável em cada leilão.  </p>
+
+             <p> Agradecemos por nos visitar e esperamos que você encontre o que procura em nosso site.</p>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sobre nos</title>
+   
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+  body{
+    background-color: #96c5b0;
+  }
+  
+  .grifado {
+    padding: 0px 5px;
+    border-radius: 4px;
+    text-decoration: underline;
+    text-decoration-color: #553555;
+    text-decoration-line: 2px; 
+    
+    
+  }
+  .artigo {
+    font-family: Arial, sans-serif; 
+    font-size: 14px; /* Adjust the font size as desired */
+    margin: 30px auto; /* Centers the element horizontally */
+    max-width: 800px; /* Adjust the max-width as desired */
+  }
+ 
+</style>
+
+</style>
+<body>
+	<!-- Criando a barra de navegação -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <table>
+      <tr>
+        <td><img src="imagens/logo.jpeg" alt="" width="70" height="70" class="d-inline-block align-text-top"></td>
+        <td><a class="navbar-brand" href="#">LeiloDiv</a></td>
+      </tr>
+    </table>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="telainicial.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="sobre_nos.html">Sobre nós</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="login.html">Login</a>
+				</li>
+        <li class="nav-item">
+					<a class="nav-link" href="contato.html">Contato</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+    <!-- Adicionando o JavaScript do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <!--Sobre nos-->
+        <h2>
+          <span class="grifado">Leilo</span><span>Div</span><br>
+        </h2>
+        <h6> Leiloe tudo o que quiser, onde estiver, no conforto do seu lar</h6>
+        <article class="artigo">
+             <p> Bem-vindo ao nosso site de leilões! 
+             Nós somos um grupo de três alunos do CEFET-MG Campus Divinópolis que criou este site como parte do nosso
+             trabalho de conclusão do curso do ensino médio</p>
+
+             <p> Nós nos inspiramos em sites de leilão famosos como o eBay e o Mercado Livre
+             para criar uma plataforma que permita que os usuários
+             comprem e vendam uma ampla variedade de produtos.
+             Nosso objetivo é fornecer uma plataforma segura e confiável para pessoas de todo o Brasil
+             para participar de leilões online</p><br>
+
+             <p>Nosso site oferece uma interface intuitiva e fácil de usar, que permite aos usuários navegar pelos
+             leilões, fazer lances e monitorar seus itens em tempo real.
+             Nós garantimos a segurança dos usuários e suas informações pessoais, bem
+             como a autenticidade dos produtos colocados à venda.
+             </p><br>
+
+             <p>Nosso objetivo é proporcionar aos nossos usuários a melhor experiência possível
+             em leilões online. Queremos que eles se sintam seguros e confiantes ao usar nossa
+             plataforma e tenham uma experiência agradável em cada leilão.  </p>
+
+             <p> Agradecemos por nos visitar e esperamos que você encontre o que procura em nosso site.</p>
+
+
+      </article>
+      
+</body>
+</html>
+
+</html>
+
+<!-- Item de leilão 3 -->
+    <div class="col-md-4">
+      <div class="auction-item"></div>
+      <img src="imagens/mona.png" alt="Item 3">
+      <h3>Quadro de arte moderna</h3>
+      <p>Descrição do item: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat ligula ut elit pretium efficitur.</p>
+      <p>Lance atual: R$ 300,00</p>
+      <div class="timer" id="timer3"></div>
+      <button class="btn btn-bid">Dar lance</button>
+    </div>
+  </div>
+
+  <!-- Item de leilão 4 -->
+  <div class="col-md-4">
+    <div class="auction-item">
+    <img src="imagens/calca.png" alt="Item 4">
+    <h3>Calça Térmica</h3>
+    <p>Descrição do item: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat ligula ut elit pretium efficitur.</p>
+    <p>Lance atual: R$ 90,00</p>
+    <div class="timer" id="timer4"></div>
+    <button class="btn btn-bid">Dar lance</button>
+  </div>
+</div>
+
+
+<!-- Item de leilão 5 -->
+<div class="col-md-4">
+  <div class="auction-item">
+  <img src="imagens/blusa.png" alt="Item 5">
+  <h3>Blusa Térmica</h3>
+  <p>Descrição do item: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat ligula ut elit pretium efficitur.</p>
+  <p>Lance atual: R$ 100,00</p>
+  <div class="timer" id="timer5"></div>
+  <button class="btn btn-bid">Dar lance</button>
+</div>
+
+</div>
+
+<!-- Item de leilão 6 -->
+<div class="col-md-4">
+  <div class="auction-item">
+  <img src="imagens/fone.png" alt="Item 6">
+  <h3>Fone</h3>
+  <p>Descrição do item: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat ligula ut elit pretium efficitur.</p>
+  <p>Lance atual: R$ 150,00</p>
+  <div class="timer" id="timer6"></div>
+  <button class="btn btn-bid">Dar lance</button>
+</div>
+</div>

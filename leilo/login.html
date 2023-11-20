@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Tela de Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="fonts/font.css">
+	<style>
+		/* Estilos CSS para a página */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			/* Adiciona uma direção de coluna para a estrutura */
+			min-height: 100vh;
+			/* Mantém o conteúdo mínimo para a altura da viewport */
+			background-color: #f5f5f5;
+		}
+
+		.navbar {
+			margin-bottom: 0;
+			/* Remove a margem inferior padrão da barra de navegação */
+		}
+
+		.login-container {
+			text-align: center;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+			margin: auto;
+			/* Centraliza verticalmente */
+			margin-top: 20px;
+			/* Espaço entre o cabeçalho e a caixa de login */
+		}
+
+		h1 {
+			margin-top: 0;
+		}
+
+		.login-form input {
+			width: 100%;
+			padding: 10px;
+			margin-top: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+
+		.login-form button {
+			width: 100%;
+			padding: 10px;
+			background-color: #00f7ff;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		.login-form button:hover {
+			background-color: #00ccff;
+		}
+
+		.signup-link {
+			color: #00f7ff;
+			text-decoration: none;
+		}
+
+		.signup-link:hover {
+			text-decoration: underline;
+		}
+
+		.profile-picture {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-color: #ccc;
+			margin-right: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Criando a barra de navegação -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<table>
+			<tr>
+				<td><img src="imagens/logo.jpeg" alt="" width="70" height="70" class="d-inline-block align-text-top">
+				</td>
+				<td><a class="navbar-brand" href="#">LeiloDiv</a></td>
+			</tr>
+		</table>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="index.php" title="Ir para a página inicial">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="sobre_nos.html" title="Ir para a página de sobre nós">Sobre nós</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contato.html" title="Ir para a página de contatos">Contato</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="login.html" title="Ir para a página de login">Login</a>
+				</li>
+			</ul>
+			<div class="navbar-nav ml-auto justify-content-end">
+
+				<a class="nav-link" href="cadastrar.html">
+					<button class="btn btn-outline-dark btn-rounded ml-3" title="Ir para cadastro">Cadastro</button>
+				</a>
+			</div>
+		</div>
+	</nav>
+	<div class="login-container">
+		<h1>Login</h1>
+		<form class="login-form" action="verifica.php" method="post">
+
+			<label for="email"></label>
+			<input type="email" id="email" name="email" required placeholder="Usuário">
+
+			<label for="senha"></label>
+			<input type="password" id="senha" name="senha" required placeholder="Senha">
+
+			<div class="button-container">
+                <button type="submit">Entrar</button>
+            </div>
+		</form>
+		<p>Não tem uma conta? <a href="cadastrar.html" class="signup-link">Cadastrar</a></p>
+	</div>
+
+	<div class="profile-picture"></div> <!-- Div para exibir a foto do usuário -->
+
+	<script>
+		function onLoginFormSubmit(event) {
+			event.preventDefault(); // Impede o envio padrão do formulário
+
+			// Simule o sucesso do login (adapte essa lógica conforme seu sistema de autenticação)
+			var loginSuccessful = true;
+
+			if (loginSuccessful) {
+				var desapegarNavItem = document.getElementById("desapegarNavItem");
+				if (desapegarNavItem) {
+					desapegarNavItem.style.display = "block";
+				}
+
+				// Redirecionar para a tela inicial após o login
+				window.location.href = "index.php";
+			}
+		}
+	</script>
+</body>
+
+</html>
