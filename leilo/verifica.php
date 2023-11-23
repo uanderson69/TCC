@@ -15,6 +15,9 @@ if (isset($_POST["email"]) && isset($_POST["senha"])) {
         $perfilBanco = $dados["Perfil"];
         if ($perfilBanco == 1) {
             $_SESSION['id'] = $dados['idUsuario'];
+            $_SESSION['Nome'] = $dados['Nome'];
+            $_SESSION['email'] = $dados['email'];
+            $_SESSION['senha'] = $dados['senha'];
             $_SESSION['perfil'] = $dados['Perfil'];
             $_SESSION['logado'] = true;
             header("Location: index.php");

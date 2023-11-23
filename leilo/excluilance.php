@@ -5,7 +5,7 @@
     $cod = (isset($_GET['cod'])) ? $_GET['cod'] : "";
 
 
-    $sql_delete = "DELETE FROM lance WHERE idLance = '$cod'";
+    $sql_delete = "DELETE FROM desapego WHERE idDesapego = '$cod'";
 
     print_r($sql_delete);
 
