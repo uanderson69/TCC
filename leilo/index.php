@@ -129,7 +129,7 @@
 
                         $duration = 604800; // 1 semana em segundos
                         echo "<p class='time-left'>Tempo restante: <span class='countdown' data-duration='" . $duration . "'></span></p>";
-                        echo "<button class='btn btn-bid' onclick='redirectToOptions()'>Dar lance</button>";
+                        echo "<button class='btn btn-bid' onclick='redirectToOptions(".$dado['idDesapego'].")'>Dar lance</button>";
                     } else {
                         echo "<p class='text-danger'>Faça o login para dar lances.</p>";
                     }
@@ -203,8 +203,8 @@
             startTimer(duration, countdown);
         });
 
-        function redirectToOptions() {
-            window.location.href = "opcoes.html";
+        function redirectToOptions(id) {
+            window.location.href = "opcoes.php?idDesapego=" + id;
         }
     </script>
 </body>

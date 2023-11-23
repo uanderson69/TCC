@@ -10,9 +10,9 @@ if (!isset($_SESSION['logado'])) {
 }
 
 // Obtém informações do perfil a partir da sessão ou de um banco de dados, dependendo de como você as armazenou
-$nomeUsuario = isset($_SESSION['Nome']) ? $_SESSION['Nome'] : 'Uanderson Luciano Teixeira Filho';
+$nomeUsuario = isset($_SESSION['Nome']) ? $_SESSION['Nome'] : 'Uanderson Teixeira';
 $emailUsuario = isset($_SESSION['email']) ? $_SESSION['email'] : 'dersonluci03@gmail.com';
-$senhaUsuario = isset($_SESSION['Senha']) ? $_SESSION['Senha'] : '12345';
+$senhaUsuario = isset($_SESSION['Senha']) ? $_SESSION['Senha'] : '123';
 ?>
 
 <!DOCTYPE html>
